@@ -3029,3 +3029,10 @@ JPC_API void JPC_PhysicsSystem_SetContactListener(
 {
 	to_jph(self)->SetContactListener(to_jph(inContactListener));
 }
+
+JPC_API void JPC_PhysicsSystem_SetGravity(
+    JPC_PhysicsSystem* self,
+    JPC_Vec3 inGravity)
+{
+	to_jph(self)->SetGravity(to_jph(inGravity));
+}

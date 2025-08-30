@@ -1619,6 +1619,8 @@ JPC_API void JPC_PhysicsSystem_SetSimShapeFilter(JPC_PhysicsSystem* self, const 
 
 JPC_API void JPC_PhysicsSystem_SetContactListener(JPC_PhysicsSystem* self, JPC_ContactListener* inContactListener);
 
+JPC_API void JPC_PhysicsSystem_SetGravity(JPC_PhysicsSystem* self, JPC_Vec3 inGravity);
+
 #ifdef __cplusplus
 }
 #endif
