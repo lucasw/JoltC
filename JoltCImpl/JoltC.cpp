@@ -2610,6 +2610,10 @@ JPC_API JPC_RVec3 JPC_BodyInterface_GetCenterOfMassPosition(const JPC_BodyInterf
 	return to_jpc(to_jph(self)->GetCenterOfMassPosition(to_jph(inBodyID)));
 }
 
+JPC_API JPC_Quat JPC_BodyInterface_GetRotation(const JPC_BodyInterface *self, JPC_BodyID inBodyID) {
+	return to_jpc(to_jph(self)->GetRotation(to_jph(inBodyID)));
+}
+
 JPC_API void JPC_BodyInterface_SetRotation(JPC_BodyInterface *self, JPC_BodyID inBodyID, JPC_Quat inRotation, JPC_Activation inActivationMode) {
 	to_jph(self)->SetRotation(to_jph(inBodyID), to_jph(inRotation), to_jph(inActivationMode));
 }
